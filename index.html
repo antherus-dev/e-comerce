@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>- Loja de Tecnologia</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <div class="logo">TechTudo</div>
+        <nav>
+            <ul>
+                <li><a href="#">Início</a></li>
+                <li><a href="#">Novidades</a></li>
+                <li><a href="#">Ofertas</a></li>
+                <li><a href="#">Contato</a></li>
+                <li><a href="#" id="carrinho">
+                    <img src="carrinho.svg" alt="Carrinho"> <span>Carrinho (0)</span>
+                </a></li>
+            </ul>
+        </nav>
+        <div class="search-bar">
+            <input type="text" placeholder="Buscar...">
+            <button type="submit"><img src="search-icon.svg" alt="Buscar"></button>
+        </div>
+    </header>
+
+    <!-- Seção de Novidades -->
+    <section class="produtos novidades">
+        <h2>Novidades</h2>
+        <div class="produto-card" data-id="1" data-nome="Produto Novo 1" data-preco="199.90">
+            <img src="produto-novo1.jpg" alt="Produto Novo 1">
+            <h3>Produto Novo 1</h3>
+            <p>O mais novo lançamento em tecnologia.</p>
+            <span>R$ 199,90</span>
+            <button class="add-carrinho">Comprar</button>
+        </div>
+        <div class="produto-card" data-id="2" data-nome="Produto Novo 2" data-preco="249.90">
+            <img src="produto-novo2.jpg" alt="Produto Novo 2">
+            <h3>Produto Novo 2</h3>
+            <p>Tecnologia de ponta ao seu alcance.</p>
+            <span>R$ 249,90</span>
+            <button class="add-carrinho">Comprar</button>
+        </div>
+    </section>
+
+    <!-- Seção de Ofertas -->
+    <section class="produtos ofertas">
+        <h2>Ofertas Especiais</h2>
+        <div class="produto-card" data-id="3" data-nome="Produto em Oferta 1" data-preco="99.90">
+            <img src="produto-oferta1.jpg" alt="Produto em Oferta 1">
+            <h3>Produto em Oferta 1</h3>
+            <p>Desconto imperdível para você!</p>
+            <span>R$ 99,90</span>
+            <button class="add-carrinho">Comprar</button>
+        </div>
+        <div class="produto-card" data-id="4" data-nome="Produto em Oferta 2" data-preco="149.90">
+            <img src="produto-oferta2.jpg" alt="Produto em Oferta 2">
+            <h3>Produto em Oferta 2</h3>
+            <p>Preço baixo com qualidade garantida.</p>
+            <span>R$ 149,90</span>
+            <button class="add-carrinho">Comprar</button>
+        </div>
+    </section>
+
+    <!-- Seção do Carrinho -->
+    <section class="carrinho-section">
+        <h2>Seu Carrinho</h2>
+        <div id="itens-carrinho">
+            <p>Carrinho vazio</p>
+        </div>
+        <div class="total">
+            <h3>Total: R$ <span id="total-carrinho">0,00</span></h3>
+        </div>
+    </section>
+
+    <!-- Link do JS -->
+    <script src="script.js"></script>
+</body>
+</html>
